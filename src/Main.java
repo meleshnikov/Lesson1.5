@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
         //Task 1
-        System.out.println("Task 1");
 
         //integer array initialization
         int[] ints = new int[3];
@@ -20,6 +19,25 @@ public class Main {
                 someBooleans[i] = false;
         }
 
+        //Task 2
+        System.out.println("Task 2");
 
+        //print integer array
+        for (int i = 0; i < ints.length - 1; i++) {
+            System.out.print(ints[i] + ", ");
+        }
+        System.out.println(ints[ints.length - 1]);
+
+        //print double array
+        for (int i = 0; i < doubles.length - 1; i++) {
+            System.out.print(doubles[i] + ", ");
+        }
+        System.out.println(doubles[doubles.length - 1]);
+
+        //print boolean array
+        for (int i = 0; i < someBooleans.length - 1; i++) {
+            System.out.print(someBooleans[i] + ", ");
+        }
+        System.out.println(someBooleans[someBooleans.length - 1]);
     }
 }
