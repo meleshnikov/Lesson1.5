@@ -65,7 +65,7 @@ public class Main {
         //Task 4
         System.out.println("\nTask 4");
         for (int i = 0; i < ints.length; i++) {
-            if ((ints[i] % 2) != 0){
+            if ((ints[i] % 2) != 0) {
                 ints[i]++;
             }
         }
@@ -74,5 +74,28 @@ public class Main {
             System.out.print(ints[i] + ", ");
         }
         System.out.println(ints[ints.length - 1]);
+
+
+        //Task 5
+        System.out.println("\nTask 5");
+        //matrix initialization
+        int rowLength = 3;
+        int columnLength = rowLength;
+        int[][] matrix = new int[rowLength][columnLength];
+
+        //matrix's diagonals filling
+        int x = 1;
+        for (int i = 0; i < matrix.length; i++) {
+            matrix[i][i] = x;
+            matrix[i][matrix.length - i - 1] = x;
+        }
+
+        //print matrix
+        for (int[] row : matrix) {
+            for (int column : row) {
+                System.out.print(column + " ");
+            }
+            System.out.println();
+        }
     }
 }
