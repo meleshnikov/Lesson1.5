@@ -39,5 +39,28 @@ public class Main {
             System.out.print(someBooleans[i] + ", ");
         }
         System.out.println(someBooleans[someBooleans.length - 1]);
+
+        //Task 3
+        System.out.println("\nTask 3");
+
+        //print reverse integer array
+        for (int i = ints.length - 1; i > 0; i--) {
+            System.out.print(ints[i] + ", ");
+        }
+        System.out.println(ints[0]);
+
+        //print reverse double array
+        for (int i = doubles.length - 1; i > 0; i--) {
+            System.out.print(doubles[i] + ", ");
+        }
+        System.out.println(doubles[0]);
+
+        //print reverse boolean array
+        for (int i = someBooleans.length - 1; i > 0; i--) {
+            System.out.print(someBooleans[i] + ", ");
+        }
+        System.out.println(someBooleans[0]);
     }
+
+
 }
