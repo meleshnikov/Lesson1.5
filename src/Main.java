@@ -60,7 +60,19 @@ public class Main {
             System.out.print(someBooleans[i] + ", ");
         }
         System.out.println(someBooleans[0]);
+
+
+        //Task 4
+        System.out.println("\nTask 4");
+        for (int i = 0; i < ints.length; i++) {
+            if ((ints[i] % 2) != 0){
+                ints[i]++;
+            }
+        }
+        //print integer array
+        for (int i = 0; i < ints.length - 1; i++) {
+            System.out.print(ints[i] + ", ");
+        }
+        System.out.println(ints[ints.length - 1]);
     }
-
-
 }
