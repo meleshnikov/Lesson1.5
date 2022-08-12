@@ -4,7 +4,7 @@ public class Main {
 
         //integer array initialization
         int[] ints = new int[3];
-        for (int i = 0; i < ints.length; i++){
+        for (int i = 0; i < ints.length; i++) {
             ints[i] = i + 1;
         }
 
@@ -14,10 +14,9 @@ public class Main {
         //boolean array initialization
         boolean[] someBooleans = new boolean[20];
         for (int i = 0; i < someBooleans.length; i++) {
-            if ((i % 2) == 0){
+            if ((i % 2) == 0) {
                 someBooleans[i] = true;
-            }
-            else{
+            } else {
                 someBooleans[i] = false;
             }
         }
@@ -26,43 +25,65 @@ public class Main {
         System.out.println("Task 2");
 
         //print integer array
-        for (int i = 0; i < ints.length - 1; i++) {
-            System.out.print(ints[i] + ", ");
+        for (int i = 0; i < ints.length; i++) {
+            if (i != (ints.length - 1)) {
+                System.out.print(ints[i] + ", ");
+            } else {
+                System.out.println(ints[i]);
+            }
         }
-        System.out.println(ints[ints.length - 1]);
+
 
         //print double array
-        for (int i = 0; i < doubles.length - 1; i++) {
-            System.out.print(doubles[i] + ", ");
+        for (int i = 0; i < doubles.length; i++) {
+            if (i != (doubles.length - 1)) {
+                System.out.print(doubles[i] + ", ");
+            } else {
+                System.out.println(doubles[i]);
+            }
         }
-        System.out.println(doubles[doubles.length - 1]);
+
 
         //print boolean array
-        for (int i = 0; i < someBooleans.length - 1; i++) {
-            System.out.print(someBooleans[i] + ", ");
+        for (int i = 0; i < someBooleans.length; i++) {
+            if (i != (someBooleans.length - 1)) {
+                System.out.print(someBooleans[i] + ", ");
+            } else {
+                System.out.println(someBooleans[i]);
+            }
         }
-        System.out.println(someBooleans[someBooleans.length - 1]);
 
         //Task 3
-        System.out.println("\nTask 3");
+        System.out.println("\n\nTask 3");
 
         //print reverse integer array
-        for (int i = ints.length - 1; i > 0; i--) {
-            System.out.print(ints[i] + ", ");
+        for (int i = ints.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(ints[i] + ", ");
+            } else {
+                System.out.println(ints[i]);
+            }
         }
-        System.out.println(ints[0]);
+
 
         //print reverse double array
-        for (int i = doubles.length - 1; i > 0; i--) {
-            System.out.print(doubles[i] + ", ");
+        for (int i = doubles.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(doubles[i] + ", ");
+            } else {
+                System.out.println(doubles[i]);
+            }
         }
-        System.out.println(doubles[0]);
+
 
         //print reverse boolean array
-        for (int i = someBooleans.length - 1; i > 0; i--) {
-            System.out.print(someBooleans[i] + ", ");
+        for (int i = someBooleans.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(someBooleans[i] + ", ");
+            } else {
+                System.out.println(someBooleans[i]);
+            }
         }
-        System.out.println(someBooleans[0]);
 
 
         //Task 4
@@ -73,10 +94,13 @@ public class Main {
             }
         }
         //print integer array
-        for (int i = 0; i < ints.length - 1; i++) {
-            System.out.print(ints[i] + ", ");
+        for (int i = 0; i < ints.length; i++) {
+            if (i != (ints.length - 1)) {
+                System.out.print(ints[i] + ", ");
+            } else {
+                System.out.println(ints[i]);
+            }
         }
-        System.out.println(ints[ints.length - 1]);
 
 
         //Task 5
