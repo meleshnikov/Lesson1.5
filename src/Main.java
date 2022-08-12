@@ -107,14 +107,14 @@ public class Main {
         System.out.println("\nTask 5");
         //matrix initialization
         int rowLength = 3;
-        int columnLength = rowLength;
+        int columnLength = 3;
         int[][] matrix = new int[rowLength][columnLength];
 
         //matrix's diagonals filling
         int x = 1;
-        for (int i = 0; i < matrix.length; i++) {
+        for (int i = 0; i < Math.min(rowLength, columnLength); i++) {
             matrix[i][i] = x;
-            matrix[i][matrix.length - i - 1] = x;
+            matrix[i][columnLength - 1 - i] = x;
         }
 
         //print matrix
