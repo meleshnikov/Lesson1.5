@@ -4,8 +4,9 @@ public class Main {
 
         //integer array initialization
         int[] ints = new int[3];
-        for (int i = 0; i < ints.length; i++)
+        for (int i = 0; i < ints.length; i++){
             ints[i] = i + 1;
+        }
 
         //double array initialization
         double[] doubles = {1.57, 7.654, 9.986};
@@ -13,10 +14,12 @@ public class Main {
         //boolean array initialization
         boolean[] someBooleans = new boolean[20];
         for (int i = 0; i < someBooleans.length; i++) {
-            if ((i % 2) == 0)
+            if ((i % 2) == 0){
                 someBooleans[i] = true;
-            else
+            }
+            else{
                 someBooleans[i] = false;
+            }
         }
 
         //Task 2
