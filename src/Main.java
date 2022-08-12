@@ -147,5 +147,26 @@ public class Main {
             sourceArray[j] = temp;
         }
         System.out.println(Arrays.toString(sourceArray));
+
+        //Task 8
+        System.out.println("\nTask 8");
+        int[] intArray = {-6, 2, 5, -8, 8, 6, 4, -7, 12, 1};
+        int[] result = new int[2];
+        int targetSum = -2;
+        boolean findSum = false;
+        for (int i = 0; i < intArray.length; i++) {
+            if (findSum){
+                break;
+            }
+            for (int j = i + 1; j < intArray.length ; j++) {
+                if (intArray[i] + intArray[j] == targetSum ){
+                    result[0] = intArray[i];
+                    result[1] = intArray[j];
+                    findSum = true;
+                    break;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(result));
     }
 }
