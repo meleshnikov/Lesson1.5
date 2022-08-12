@@ -126,7 +126,7 @@ public class Main {
             }
             System.out.println();
         }
-
+/*
         //Task 6
         System.out.println("\nTask 6");
         int[] sourceArray = {5, 4, 3, 2, 1};
@@ -136,5 +136,16 @@ public class Main {
         }
         System.out.println(Arrays.toString(sourceArray));
         System.out.println(Arrays.toString(resultArray));
+*/
+        //Task 7
+        System.out.println("\nTask 7");
+        int[] sourceArray = {5, 4, 3, 2, 1};
+        System.out.println(Arrays.toString(sourceArray));
+        for (int i = 0, j = sourceArray.length - 1; i < j; i++, j--) {
+            int temp = sourceArray[i];
+            sourceArray[i] = sourceArray[j];
+            sourceArray[j] = temp;
+        }
+        System.out.println(Arrays.toString(sourceArray));
     }
 }
