@@ -147,7 +147,7 @@ public class Main {
             sourceArray[j] = temp;
         }
         System.out.println(Arrays.toString(sourceArray));
-
+/*
         //Task 8
         System.out.println("\nTask 8");
         int[] intArray = {-6, 2, 5, -8, 8, 6, 4, -7, 12, 1};
@@ -168,5 +168,28 @@ public class Main {
             }
         }
         System.out.println(Arrays.toString(result));
+*/
+        //Task 9
+        System.out.println("\nTask 9");
+        int[] intArray = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        int[][] tempResult = new int[intArray.length][2];
+        int targetSum = -2;
+        int row = 0;
+        for (int i = 0; i < intArray.length; i++) {
+            for (int j = i + 1; j < intArray.length; j++) {
+                if (intArray[i] + intArray[j] == targetSum) {
+                    tempResult[row][0] = intArray[i];
+                    tempResult[row][1] = intArray[j];
+                    row++;
+                }
+            }
+        }
+        int[][] result = new int[row][2];
+        for (int i = 0; i < row; i++) {
+            result[i] = tempResult[i];
+        }
+        System.out.println(Arrays.toString(intArray));
+        //System.out.println(Arrays.deepToString(tempResult));
+        System.out.println(Arrays.deepToString(result));
     }
 }
